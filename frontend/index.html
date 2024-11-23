@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task Scheduler</h1>
+
+  <div>
+    <input type="text" id="title" placeholder="Task Title" />
+    <textarea id="description" placeholder="Task Description"></textarea>
+    <input type="datetime-local" id="scheduleTime" />
+    <button onclick="createTask()">Create Task</button>
+  </div>
+
+  <div id="notification" class="hidden"></div>
+
+  <div id="taskList"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

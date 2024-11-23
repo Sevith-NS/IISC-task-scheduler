@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+}
+
+#taskList {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+#notification.error {
+  background: #f44336;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
